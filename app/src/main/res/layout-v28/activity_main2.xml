@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gui"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/main2_textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="85dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/welcome"
+        android:fontFamily="serif"
+        android:textSize="25sp"
+        android:textColor="#fff"
+        android:textStyle="normal"
+        android:shadowColor="#000"
+        android:shadowDx="3"
+        android:shadowDy="5"
+        android:shadowRadius="15"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="10dp"
+        android:visibility="visible"
+        >
+        <LinearLayout
+            android:id="@+id/first_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent">
+            <ImageButton
+                android:id="@+id/btn1"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/gradient"
+                android:src = "@drawable/light_off"
+                android:scaleType="fitCenter"
+                android:elevation="10dp"
+                android:contentDescription="@string/todo"
+                tools:targetApi="p" />
+            <ImageButton
+                android:id="@+id/btn2"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/gradient"
+                android:src="@drawable/alarm_bell_logo"
+                android:scaleType = "fitCenter"
+                android:elevation="10dp"
+                android:contentDescription="@string/todo"
+                tools:targetApi="p" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/second_layout"
+            android:layout_below="@id/first_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            tools:ignore="UselessParent">
+            <ImageButton
+                android:id="@+id/btn3"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/gradient"
+                android:src ="@drawable/music_logo"
+                android:scaleType="fitCenter"
+                android:elevation="10dp"
+                android:onClick="playMusic"
+                android:contentDescription="@string/todo"
+                tools:targetApi="p" />
+            <ImageButton
+                android:id="@+id/btn4"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/gradient"
+                android:src="@drawable/keyboard_logo"
+                android:scaleType="fitCenter"
+                android:elevation="10dp"
+                android:contentDescription="@string/todo"
+                tools:targetApi="p" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
